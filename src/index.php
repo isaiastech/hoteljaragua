@@ -1,3 +1,6 @@
+<?php
+include_once 'helpers/redirect.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
    <head>
@@ -60,22 +63,22 @@
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
                               <li class="nav-item active">
-                                 <a class="nav-link" href="index.php">Hotel</a>
+                                 <a class="nav-link" href="<?= url('index') ?>">Hotel</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="about.php">Sobre nós</a>
+                                 <a class="nav-link" href="<?= url('about') ?>">Sobre nós</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="room.php">Nossos apartamentos</a>
+                                 <a class="nav-link" href="<?= url('rooms') ?>">Nossos apartamentos</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="gallery.php">Galeria</a>
+                                 <a class="nav-link" href="<?= url('gallery') ?>">Galeria</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="blog.php">Lazer</a>
+                                 <a class="nav-link" href="<?= url('blog') ?>">Lazer</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="contact.php">Contato</a>
+                                 <a class="nav-link" href="<?= url('contact') ?>">Contato</a>
                               </li>
                            </ul>
                         </div>
