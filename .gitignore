@@ -1,0 +1,25 @@
+
+---
+
+## 📄 .gitignore
+
+```gitignore
+# Docker
+*.log
+
+# PHP
+/vendor/
+composer.lock
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDEs / Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Cache
+.cache/
