@@ -1,90 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-   <head>
-      <!-- basic -->
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- site metas -->
-      <title>lazer</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- bootstrap css -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <!-- style css -->
-      <link rel="stylesheet" href="css/style.css">
-      <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
-      <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
-      <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon">
-      <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-      <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-   </head>
-   <!-- body -->
-   <body class="main-layout inner_page">
-      <!-- loader  -->
-      <div class="loader_bg">
-         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
-      </div>
-      <!-- end loader -->
-      <!-- header -->
-      <header>
-         <!-- header inner -->
-         <div class="header">
-            <div class="container">
-               <div class="row">
-                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
-                     <div class="full">
-                        <div class="center-desk">
-                           <div class="logo">
-                              <a href="index.php"><img width="150px" src="images/logo.png" alt="jaragua" /></a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarsExample04">
-                           <ul class="navbar-nav mr-auto">
-                              <li class="nav-item active">
-                                 <a class="nav-link" href="index.php">Hotel</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="about.php">Sobre nós</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="room.php">Nossos apartamentos</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="gallery.php">Galeria</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="blog.php">Lazer</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="contact.php">Contato</a>
-                              </li>
-                           </ul>
-                        </div>
-                     </nav>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </header>
+<?php
+$pageTitle  = 'lazer';
+$activeMenu = 'blog';
+
+include_once 'helpers/redirect.php';
+include_once 'includes/header.php';
+?>
+
       <!-- end header inner -->
       <!-- end header -->
         <div class="back_re">
@@ -156,68 +77,4 @@
       <!-- end blog -->
      
       <!--  footer -->
-      <footer>
-         <div class="footer">
-            <div class="container">
-               <div class="row">
-                  <div class=" col-md-4">
-                     <h3>Contato</h3>
-                     <ul class="conta">
-                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Rua Francisco Lindner, 350 - Joaçaba/SC</li>
-                        <li><i class="fa fa-mobile" aria-hidden="true"></i>49 35277300</li>
-                        <li> <i class="fa fa-envelope" aria-hidden="true"></i><a href="#"> jaragua@hoteljaraguareal.com.br</a></li>
-                     </ul>
-                  </div>
-                  <div class="col-md-4">
-                     <h3>Menu</h3>
-                     <ul class="link_menu">
-                        <li class="active"><a href="#">Hotel</a></li>
-                        <li><a href="about.php"> Sobre</a></li>
-                        <li><a href="room.php">Nossos apartamentos</a></li>
-                        <li><a href="gallery.php">Galeria</a></li>
-                        <li><a href="blog.php">Lazer</a></li>
-                        <li><a href="contact.php">Contato</a></li>
-                     </ul>
-                  </div>
-                  <div class="col-md-4">
-                     <h3>Nossas Notícias</h3>
-                     <form class="bottom_form">
-                        <input class="enter" placeholder="Seu e-mail" type="text" name="Enter your email">
-                        <button class="sub_btn">Assine</button>
-                     </form>
-                     <ul class="social_icon">
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-            <div class="copyright">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-10 offset-md-1">
-                        
-                        <p>
-                        © <?php echo date("Y"); ?> Todos os direitos reservados. IsaiasTech
-                        <br><br>
-                        Desenvolvido por <a href="https://isaiastech.com.br/" target="_blank">IsaiasTech</a>
-                        </p>
-
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </footer>
-      <!-- end footer -->
-      <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
-   </body>
-</html>
+<?php include_once 'includes/footer.php'; ?>
