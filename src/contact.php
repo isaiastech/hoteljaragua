@@ -39,7 +39,7 @@ include_once 'includes/header.php';
                            <input class="contactus" placeholder="Email" type="email" name="email">
                         </div>
                         <div class="col-md-12">
-                           <input class="contactus" placeholder="Telefone" type="text" name="phone">>                          
+                           <input class="contactus" placeholder="Telefone" type="text" name="phone">                          
                         </div>
                         <div class="col-md-12">
                            <textarea class="textarea" placeholder="Mensagem" type="text" name="message">Mensagem</textarea>

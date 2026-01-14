@@ -13,7 +13,7 @@ include_once __DIR__ . '/../helpers/redirect.php';
 
    <!-- CSS -->
    <link rel="stylesheet" href="css/bootstrap.min.css">
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/style.css?v=<?= filemtime('css/style.css') ?>">
    <link rel="stylesheet" href="css/responsive.css">
    <link rel="icon" href="icons/favicon.png">
    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
