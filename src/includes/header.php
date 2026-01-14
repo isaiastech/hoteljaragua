@@ -19,7 +19,11 @@ include_once __DIR__ . '/../helpers/redirect.php';
    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 </head>
-
+<a href="https://reservas.desbravador.com.br/hotel-app/hotel-jaragua"
+   class="btn-reserva"
+   target="_blank">
+   Faça já sua reserva
+</a>
 <body class="main-layout">
 
 <!-- loader -->
@@ -59,6 +63,14 @@ include_once __DIR__ . '/../helpers/redirect.php';
                         </li>
                         <li class="nav-item <?= ($activeMenu ?? '') === 'gallery' ? 'active' : '' ?>">
                           <a class="nav-link" href="<?= url('gallery') ?>">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link"
+                              href="https://reservas.desbravador.com.br/hotel-app/hotel-jaragua"
+                              target="_blank"
+                              rel="noopener noreferrer">
+                              Reservas 
+                          </a>
                         </li>
                         <li class="nav-item <?= ($activeMenu ?? '') === 'contact' ? 'active' : '' ?>">
                           <a class="nav-link" href="<?= url('contact') ?>">Contato</a>

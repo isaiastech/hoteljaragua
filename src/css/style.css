@@ -944,5 +944,42 @@ line-height: 35px;
 }
 
 
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(201, 161, 74, 0.7);
+    }
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 15px rgba(201, 161, 74, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(201, 161, 74, 0);
+    }
+}
+
+.btn-reserva {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #c9a14a;
+    color: #fff;
+    padding: 14px 22px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    z-index: 9999;
+    animation: pulse 2s infinite;
+}
+
+
+.btn-reserva:hover {
+    background: #b18c3d;
+    color: #fff;
+    transform: scale(1.05);
+}
 
 
