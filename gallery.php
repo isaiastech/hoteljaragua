@@ -61,6 +61,7 @@ include_once 'includes/header.php';
                         <div class="gallery_img">
                            <figure>
                               <img src="<?= htmlspecialchars($imageUrl) ?>" 
+                                 loading="lazy"
                                    alt="Área de lazer - <?= htmlspecialchars($folder) ?>"
                                    class="img-fluid">
                            </figure>
